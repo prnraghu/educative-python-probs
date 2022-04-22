@@ -33,20 +33,20 @@ def maxsubarraywindow(k,arr):
         if(i>=k-1):
             if(maxsum<sum):
                 maxsum=sum
+            wstart=arr[i-k+1]
             sum=sum-wstart
-            wstart=arr[i-(k-1)]
     return maxsum
 
 
 arr=[2, 1, 5, 1, 3, 2]
 k=3
-print(max_sub_array_of_size_k(k,arr))
+# print(max_sub_array_of_size_k(k,arr))
 print(maxsubarraywindow(k,arr))
 
 
 arr=[2, 3, 4, 1, 5]
 k=2
-print(max_sub_array_of_size_k(k,arr))
+# print(max_sub_array_of_size_k(k,arr))
 print(maxsubarraywindow(k,arr))
 
 
